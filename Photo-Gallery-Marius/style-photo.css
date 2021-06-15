@@ -1,0 +1,56 @@
+
+
+.grid-3-columns {
+    margin: 1em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 1em;
+    /*grid-auto-flow: column; */
+}
+
+
+@media (max-width: 480px) {
+    .grid-3-columns {
+        grid-auto-flow: row;}
+    }
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+   body {
+       background-color: rgb(139, 100, 100);
+   }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+   body {
+       background-color: rgb(93, 124, 99);
+   }
+}
+@media (min-width:1201px) {
+   body {
+       background-color: rgb(98, 95, 116);
+   }
+}
+
+
+.header {
+    text-align: center;
+    font-size: 300%;
+    font-weight: bold;
+}
+
+figcaption {
+    text-align: center;
+    color: darkred;
+    font-size: 120%;
+}
+
+
+figure img{
+    border: black solid 0.5em;
+}
+
+figure img:hover{
+    border: rgb(28, 220, 226) solid 0.5em;
+}
+
